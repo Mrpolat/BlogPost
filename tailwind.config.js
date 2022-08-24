@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,17 +6,27 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors:{
-
+      backgroundImage: {
+        'town': "url('/src/image/resim.jpg')",
+        'adem': "url('/src/image/ademdgn.jpg')",
       },
-      inset:{
-        '100px':'100px',
-        '85%':'85%'
+      colors: {
+        "opacity": "rgba(0, 0, 0, 0.5)",
+        "lightgray": "#FEFBFD",
+        "darkgray": "#ede3de",
+      },
+      inset: {
+        '100px': '100px',
+        '85%': '85%'
       },
       boxShadow: {
         '3xl': 'rgba(0, 0, 0, 0.35) 0px 5px 15px;',
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+    require('@tailwindcss/line-clamp'),
+  ],
 }

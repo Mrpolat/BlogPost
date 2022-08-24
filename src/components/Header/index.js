@@ -3,7 +3,7 @@ import { HeaderItem } from './HeaderItem';
 
 const Header = () => {
     return (
-        <div className='bg-blue-500 '>
+        <div className='bg-opacity  absolute w-[100%] block'>
             <div className=''>
                 <ul className='flex justify-center py-6 space-x-10' >
                     {HeaderItem.map((item, index) => {
