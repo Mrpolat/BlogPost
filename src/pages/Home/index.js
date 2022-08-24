@@ -4,8 +4,7 @@ import Jumbotron from '../../components/Jumbotron/index'
 import MainSection from '../../components/MainSection'
 const home = ()=> {
   return (
-    <div>
-        <Header/>        
+    <div>   
         <Jumbotron/>
         <MainSection/>
     </div>

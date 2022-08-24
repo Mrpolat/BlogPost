@@ -18,19 +18,19 @@ export const HeaderItem = [
   },
   {
     title: 'Contact',
-    path: '/about',
+    path: '/Contact',
     icon: <AiIcons.AiFillContacts className='h-[37px] w-[20px]' />,
     cName: 'nav-text'
   },
   {
     title: 'Write',
-    path: '/about',
+    path: '/Write',
     icon: <IoIcons.IoIosPaper className='h-[37px] w-[20px]' />,
     cName: 'nav-text'
   },
   {
     title: 'Login',
-    path: '/about',
+    path: '/Login',
     icon: <MdIcons.MdLogin  className='h-[37px] w-[20px]'/>,
     cName: 'nav-text'
   }
