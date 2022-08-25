@@ -1,5 +1,5 @@
 import React from 'react'
-function index() {
+const About=()=> {
   return (
     <div className='container mx-auto relative top-[100px] bg-white '>
         <div className='text-justify p-5'>
@@ -9,4 +9,4 @@ function index() {
   )
 }
 
-export default index
+export default About
