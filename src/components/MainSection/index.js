@@ -6,13 +6,6 @@ const MainSection=()=> {
     <div className='w-[100%] flex flex-row '>
         <div className='basis-4/5'>
         <NewsCard/>
-        <NewsCard/>
-        <NewsCard/>
-        <NewsCard/>
-        <NewsCard/>
-        <NewsCard/>
-        <NewsCard/>
-        <NewsCard/>
         </div>
         <div className='basis-1/5'>
         <Card/>

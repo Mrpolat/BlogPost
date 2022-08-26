@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-
 import reportWebVitals from './reportWebVitals';
+import { BlogPostProvider } from './Context/blogPost';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BlogPostProvider>
     <App />
+    </BlogPostProvider>
   </React.StrictMode>
 );
 
