@@ -2,6 +2,7 @@ import React, {
     createContext, useContext, useState
 } from 'react';
 import PropTypes from 'prop-types';
+import { sendBlog } from '../api/api';
 
 const BlogPostContext = createContext();
 
@@ -9,14 +10,25 @@ export const useBlogPost = () => useContext(BlogPostContext)
 
 export const BlogPostProvider = ({ children }) => {
 
-    const [selectedID, setSelectedID] = useState("sa");//router yapısında ki urlden gelen id yi setler   
-    console.log(selectedID)
-    const HandleBlogPostID = (e) => setSelectedID(e);
+    const [blogTitle, setBlogTitle] = useState("Title")
+    const [blogContent, setBlogContent] = useState("Content")
+    const [blogUploadFile, setBlogUploadFile] = useState("UploadFile")
+    
+    const handleBlog = ({title,content,uploadFile}) => {
+        sendBlog({title:title ,content:content,uploadFile:uploadFile}).then(
+            response=>{
+                console.log(response)
+                setBlogTitle(title)
+                setBlogContent(content)
+                setBlogUploadFile(uploadFile)
+        })
+    }   
+
+    
 
     return (
-        <BlogPostContext.Provider value={{
-            selectedID,
-            setHandleBlogPostID: HandleBlogPostID,
+        <BlogPostContext.Provider value={{blogTitle,blogContent,blogUploadFile
+            ,handleBlog
         }}>
             {children}
         </BlogPostContext.Provider>

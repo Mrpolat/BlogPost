@@ -1,4 +1,3 @@
-import React from 'react';
 // backend oluşturuluncaya kadar kullanılacak datalar.
 export const BlogData = [
   {
@@ -18,11 +17,18 @@ export const BlogData = [
     title: 'Mimarlık Seçmek İçin 3 neden ',
     description: 'hem sayısal hem de sözel zeka gerektirir. hem hayal gücü hem de ileri görüş gerektirir. sadece hayal etmek yetmez, onu somut birşeylere dönüştürebilmek gerekir. bazen hayatın somut gerçekliklerini soyuta çevirip bir tasarım yapmak gerekir. aslında her şey tasarım üzerine kuruludur. mimarlık okuyan biri her şeyden ilham almalıdır. ve aslında ilham diye bir lüksü yoktur. çünkü bu bir iştir ve işleri ilhamla yapamayız. yani sürekli bir yaratım sürecindeyiz. bu da bize özgüven veriyor, hava katıyor ve diğer insanlardan farklı, daha yüce biryerlerde hissetmemizi sağlıyor. çünkü biz insanlara hayal satıyoruz ve yaşamlarını biz yaratıyoruz. çok eğlenceli bir yerde de :)',
     image:"blabla",
+    
 },
 {
     id:'4',
     title: 'Mimarlık Seçmek İçin 3 neden ',
     description: 'hem sayısal hem de sözel zeka gerektirir. hem hayal gücü hem de ileri görüş gerektirir. sadece hayal etmek yetmez, onu somut birşeylere dönüştürebilmek gerekir. bazen hayatın somut gerçekliklerini soyuta çevirip bir tasarım yapmak gerekir. aslında her şey tasarım üzerine kuruludur. mimarlık okuyan biri her şeyden ilham almalıdır. ve aslında ilham diye bir lüksü yoktur. çünkü bu bir iştir ve işleri ilhamla yapamayız. yani sürekli bir yaratım sürecindeyiz. bu da bize özgüven veriyor, hava katıyor ve diğer insanlardan farklı, daha yüce biryerlerde hissetmemizi sağlıyor. çünkü biz insanlara hayal satıyoruz ve yaşamlarını biz yaratıyoruz. çok eğlenceli bir yerde de :)',
+    image:"blabla",
+},
+{
+    id:'4',
+    title: 'Mimarlık Seçmek İçin 3 neden ',
+    description: ["qweqweqweqweqweqwe","sdasdasdasdasdasd",],
     image:"blabla",
 },
 ];

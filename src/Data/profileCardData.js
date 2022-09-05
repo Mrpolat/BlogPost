@@ -1,4 +1,3 @@
-import React from 'react';
 // backend oluşturuluncaya kadar kullanılacak datalar.
 export const ProfileCardData = 
   {
