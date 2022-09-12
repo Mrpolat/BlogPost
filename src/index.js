@@ -5,13 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BlogPostProvider } from './Context/blogPost';
 import { EmailProvider } from './Context/email';
+import { UserProvider } from './Context/user';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BlogPostProvider>
       <EmailProvider>
+        <UserProvider>
         <App />
+        </UserProvider>
       </EmailProvider>
     </BlogPostProvider>
   </React.StrictMode>

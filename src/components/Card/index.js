@@ -21,7 +21,7 @@ const Card = () => {
                 </div>
                 <ul className='flex flex-wrap text-[15px] py-1 '>
                     {ProfileCardData.programs.map((item) =>
-                        <li className=' pl-5'>{item}</li>
+                        <li key={item} className=' pl-5'>{item}</li>
                     )}
                 </ul>
                 <div className='py-1 text-center uppercase border-y-2 border-slate-700'>

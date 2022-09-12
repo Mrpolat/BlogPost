@@ -3,19 +3,19 @@ import { useEmail } from '../../Context/email'
 
 const Contact = () => {
 
-    const [emailTitle, setEmailTitle] = useState("" )
+    const [email, setEmail] = useState("" )
     const [emailContent, setEmailContent] = useState( "")
     const {handleEmail} = useEmail();
 
     const saveEmail=()=>{
-        handleEmail({title:emailTitle,content:emailContent})
+        handleEmail({email:email,content:emailContent})
     }
 
     return (
         <div className='container mx-auto relative top-[100px] bg-white '>
             <div className='text-justify p-5'>                
                 <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your email</label>
-                <input onInput={e => setEmailTitle(e.target.value)} 
+                <input onInput={e => setEmail(e.target.value)} 
                 type="email" className='block p-2.5 mb-2 w-[25%] text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 ' />
                 <label htmlFor="message" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
                 <textarea  onInput={e => setEmailContent(e.target.value)}  

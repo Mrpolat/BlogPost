@@ -26,7 +26,7 @@ export const BlogData = [
     image:"blabla",
 },
 {
-    id:'4',
+    id:'5',
     title: 'Mimarlık Seçmek İçin 3 neden ',
     description: ["qweqweqweqweqweqwe","sdasdasdasdasdasd",],
     image:"blabla",

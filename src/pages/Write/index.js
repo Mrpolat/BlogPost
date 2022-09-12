@@ -11,7 +11,7 @@ const Write = () => {
         fileInput.current.click();
     }
     const pushBlog = () => {
-        handleBlog({ title: blogTitle, content: blogContent, uploadFile:fileInput })
+        handleBlog({ title: blogTitle, content: blogContent, uploadFile:"bla" })
         console.log(fileInput.current.value)
     }
     return (

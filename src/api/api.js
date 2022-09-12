@@ -1,13 +1,13 @@
 import axios from "axios";
 
-export const sendEmail = (emailTitle,emailContent) =>{
-    console.log("burası Email api",emailContent,emailTitle)
+export const sendEmail = (email,emailContent) =>{
+    console.log("burası Email api",emailContent,email)
     let sd = new FormData()
-    sd.append('title', emailTitle)
+    sd.append('title', email)
     sd.append('content',emailContent)
  return axios({
     method: 'post',
-    url: `yusufun vereceği URL`,
+    url: ` URL`,
     data:sd,
     headers: { "Content-Type": "multipart/form-data" },
   });
@@ -21,7 +21,19 @@ export const sendBlog = (title,content,uploadFile) =>{
    sd.append('uploadFile',uploadFile)
 return axios({
    method: 'post',
-   url: `yusufun vereceği URL`,
+   url: `URL`,
+   data:sd,
+   headers: { "Content-Type": "multipart/form-data" },
+ });
+}
+export const Login = (userID,password) =>{
+   console.log("burası login api",userID,password)
+   let sd = new FormData()
+   sd.append('title', userID)
+   sd.append('content',password)
+return axios({
+   method: 'post',
+   url: ` URL`,
    data:sd,
    headers: { "Content-Type": "multipart/form-data" },
  });
